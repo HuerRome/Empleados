@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="empleados.css">
+</head>
+<body>
+    <div>
+        <h1>UNIVERS12</h1>
+        <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <a href="inicio.html"><span><ion-icon name="link-outline"></ion-icon>Inicio</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="empleados.html"><span><ion-icon name="person-outline"></ion-icon>Empleados</span><ion-icon name="caret-down-outline"></ion-icon></a>
+            <a href="clientes.html"><span><ion-icon name="people-outline" class="clientes"></ion-icon>Clientes</span><ion-icon name="caret-down-outline"></ion-icon></a>
+        </div>
+        <div class="texto">
+            <h1>Empleados</h1>
+            <form action="procesar.php" method="POST">
+                <label for="nombre">Alias:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Alias:" class="input"><br><br>
+              
+                <label for="pais">Cargo:</label>
+                <select name="select" id="select">
+                    <option value="Gerente_recursos_humanos">Gerente de Recursos Humanos</option>
+                    <option value="Gerente:financiero" selected>Gerente Financiero</option>
+                    <option value="Gerente_Operaciones">Gerente de Operaciones</option>
+                    <option value="Asistente_Ejecutivo">Asistente Ejecutivo</option>
+                    <option value="Ingeniero_sistemas">Ingeniero en sistemas</option>
+                    <option value="Desarrollador_Backend">Desarrollador Backend</option>
+                </select>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Correo Electrónico:" class="input"><br><br>
+                
+                <div class="botones">
+                    <input type="registrar" value="Registrar">
+                    <input type="actualizar" value="Actualizar">
+                    <input type="limpiar" value="Limpiar">
+                </div>
+            </form>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                          <td><strong>N°</strong></td>
+                          <td><strong>Alias</strong></td>
+                          <td><strong>País</strong></td>
+                          <td><strong>Cargo</strong></td>
+                          <td><strong>Correo</strong></td>
+                          <td><strong>Opción</strong></td>
+                          <td><strong>Opción</strong></td>
+                          <td><strong>Opción</strong></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>3</strong></td>
+                            <td>AutumnSkyline</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td>curiousmind23@hotmail.com</td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>6</strong></td>
+                            <td>alex.wilson</td>
+                            <td>Chile</td>
+                            <td></td>
+                            <td>alex.wilson@gmail.com
+                            </td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2</strong></td>
+                            <td>SilverDragon87</td>
+                            <td>Uruguay</td>
+                            <td></td>
+                            <td>randomuser1234@gmail.com</td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>7</strong></td>
+                            <td>emma.smith</td>
+                            <td>Costa Rica</td>
+                            <td></td>
+                            <td>emma.smith@gmail.com</td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                          <td><strong>1</strong></td>
+                          <td>Jorge Hernadez</td>
+                          <td>Honduras</td>
+                          <td></td>
+                          <td>Jorge@gmail.com</td>
+                          <td><input type="button" value="Modificar"></td>
+                          <td><input type="button" value="Bloquear"></td>
+                          <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>4</strong></td>
+                            <td>RubySunflower</td>
+                            <td>Brazil</td>
+                            <td></td>
+                            <td>techgeek2022@outlook.com</td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>5</strong></td>
+                            <td>ElectricSphinx</td>
+                            <td>Paraguay</td>
+                            <td></td>
+                            <td>musiclover567@gmail.com</td>
+                            <td><input type="button" value="Modificar"></td>
+                            <td><input type="button" value="Bloquear"></td>
+                            <td><input type="button" value="Eliminar"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
